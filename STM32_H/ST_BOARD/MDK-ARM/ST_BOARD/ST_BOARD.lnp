@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"st_board\startup_stm32f103x6.o"
+"st_board\main.o"
+"st_board\stm32f1xx_it.o"
+"st_board\stm32f1xx_hal_msp.o"
+"st_board\st_board.o"
+"st_board\stm32f1xx_hal_gpio_ex.o"
+"st_board\stm32f1xx_hal_i2c.o"
+"st_board\stm32f1xx_hal.o"
+"st_board\stm32f1xx_hal_rcc.o"
+"st_board\stm32f1xx_hal_rcc_ex.o"
+"st_board\stm32f1xx_hal_gpio.o"
+"st_board\stm32f1xx_hal_dma.o"
+"st_board\stm32f1xx_hal_cortex.o"
+"st_board\stm32f1xx_hal_pwr.o"
+"st_board\stm32f1xx_hal_flash.o"
+"st_board\stm32f1xx_hal_flash_ex.o"
+"st_board\stm32f1xx_hal_exti.o"
+"st_board\stm32f1xx_hal_rtc.o"
+"st_board\stm32f1xx_hal_rtc_ex.o"
+"st_board\stm32f1xx_hal_tim.o"
+"st_board\stm32f1xx_hal_tim_ex.o"
+"st_board\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "ST_BOARD\ST_BOARD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ST_BOARD.map" -o ST_BOARD\ST_BOARD.axf
